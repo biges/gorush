@@ -1,4 +1,4 @@
-module github.com/appleboy/gorush
+module github.com/biges/gorush
 
 go 1.12
 

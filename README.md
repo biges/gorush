@@ -2,16 +2,16 @@
 
 A push notification micro server using [Gin](https://github.com/gin-gonic/gin) framework written in Go (Golang) and see the [demo app](https://github.com/appleboy/flutter-gorush).
 
-[![GoDoc](https://godoc.org/github.com/appleboy/gorush?status.svg)](https://godoc.org/github.com/appleboy/gorush)
+[![GoDoc](https://godoc.org/github.com/biges/gorush?status.svg)](https://godoc.org/github.com/biges/gorush)
 [![Build Status](https://cloud.drone.io/api/badges/appleboy/gorush/status.svg)](https://cloud.drone.io/appleboy/gorush)
 [![Build status](https://ci.appveyor.com/api/projects/status/ka4hvplssp1q2s5u?svg=true)](https://ci.appveyor.com/project/appleboy/gorush-fp5dh)
 [![codecov](https://codecov.io/gh/appleboy/gorush/branch/master/graph/badge.svg)](https://codecov.io/gh/appleboy/gorush)
-[![Go Report Card](https://goreportcard.com/badge/github.com/appleboy/gorush)](https://goreportcard.com/report/github.com/appleboy/gorush)
+[![Go Report Card](https://goreportcard.com/badge/github.com/biges/gorush)](https://goreportcard.com/report/github.com/biges/gorush)
 [![codebeat badge](https://codebeat.co/badges/0a4eff2d-c9ac-46ed-8fd7-b59942983390)](https://codebeat.co/projects/github-com-appleboy-gorush)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/c82e0ed283474c5686d705ce64d004f7)](https://www.codacy.com/app/appleboy/gorush?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=appleboy/gorush&amp;utm_campaign=Badge_Grade)
 [![Docker Pulls](https://img.shields.io/docker/pulls/appleboy/gorush.svg)](https://hub.docker.com/r/appleboy/gorush/)
 [![](https://images.microbadger.com/badges/image/appleboy/gorush.svg)](https://microbadger.com/images/appleboy/gorush "Get your own image badge on microbadger.com")
-[![Release](https://github-release-version.herokuapp.com/github/appleboy/gorush/release.svg?style=flat)](https://github.com/appleboy/gorush/releases/latest)
+[![Release](https://github-release-version.herokuapp.com/github/appleboy/gorush/release.svg?style=flat)](https://github.com/biges/gorush/releases/latest)
 
 ## Contents
 
@@ -183,36 +183,36 @@ How to send push notification using `gorush` command? (Android or iOS)
 
 ### Download a binary
 
-The pre-compiled binaries can be downloaded from [release page](https://github.com/appleboy/gorush/releases).
+The pre-compiled binaries can be downloaded from [release page](https://github.com/biges/gorush/releases).
 
 With `Go` installed
 
 ```
-$ go get -u -v github.com/appleboy/gorush
+$ go get -u -v github.com/biges/gorush
 ```
 
 On linux
 
 ```sh
-$ wget https://github.com/appleboy/gorush/releases/download/1.10.0/gorush-1.10.0-linux-amd64 -O gorush
+$ wget https://github.com/biges/gorush/releases/download/1.10.0/gorush-1.10.0-linux-amd64 -O gorush
 ```
 
 On OS X
 
 ```sh
-$ wget https://github.com/appleboy/gorush/releases/download/1.10.0/gorush-1.10.0-darwin-amd64 -O gorush
+$ wget https://github.com/biges/gorush/releases/download/1.10.0/gorush-1.10.0-darwin-amd64 -O gorush
 ```
 
 On Windows
 
 ```sh
-$ wget https://github.com/appleboy/gorush/releases/download/1.10.0/gorush-1.10.0-windows-amd64.exe -O gorush.exe
+$ wget https://github.com/biges/gorush/releases/download/1.10.0/gorush-1.10.0-windows-amd64.exe -O gorush.exe
 ```
 
 On macOS, use Homebrew.
 
 ```
-$ brew install --HEAD https://github.com/appleboy/gorush/raw/master/HomebrewFormula/gorush.rb
+$ brew install --HEAD https://github.com/biges/gorush/raw/master/HomebrewFormula/gorush.rb
 ```
 
 ### Install from source
@@ -229,7 +229,7 @@ Gorush uses the Go Modules support built into Go 1.11 to build. The easiest way 
 ```
 $ mkdir $HOME/src
 $ cd $HOME/src
-$ git clone https://github.com/appleboy/gorush.git
+$ git clone https://github.com/biges/gorush.git
 $ cd gorush
 $ go install
 ```
@@ -668,7 +668,7 @@ Add other fields which user defined via `data` field.
 }
 ```
 
-Support send notification from different environment. See the detail of [issue](https://github.com/appleboy/gorush/issues/246).
+Support send notification from different environment. See the detail of [issue](https://github.com/biges/gorush/issues/246).
 
 ```diff
 {
@@ -841,7 +841,7 @@ import (
 	"context"
 	"log"
 
-	"github.com/appleboy/gorush/rpc/proto"
+	"github.com/biges/gorush/rpc/proto"
 
 	structpb "github.com/golang/protobuf/ptypes/struct"
 	"google.golang.org/grpc"
@@ -942,7 +942,7 @@ import (
 	"context"
 	"log"
 
-	"github.com/appleboy/gorush/rpc/proto"
+	"github.com/biges/gorush/rpc/proto"
 
 	structpb "github.com/golang/protobuf/ptypes/struct"
 	"google.golang.org/grpc"
@@ -1083,7 +1083,7 @@ AWS excited to [announce Go as a supported language for AWS Lambda](https://aws.
 Download source code first.
 
 ```sh
-$ git clone https://github.com/appleboy/gorush.git
+$ git clone https://github.com/biges/gorush.git
 $ cd gorush && make build_linux_lambda
 ```
 

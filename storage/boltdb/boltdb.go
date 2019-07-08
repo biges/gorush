@@ -3,13 +3,13 @@ package boltdb
 import (
 	"log"
 
-	"github.com/appleboy/gorush/config"
-	"github.com/appleboy/gorush/storage"
+	"github.com/biges/gorush/config"
+	"github.com/biges/gorush/storage"
 
 	"github.com/asdine/storm"
 )
 
-// New func implements the storage interface for gorush (https://github.com/appleboy/gorush)
+// New func implements the storage interface for gorush (https://github.com/biges/gorush)
 func New(config config.ConfYaml) *Storage {
 	return &Storage{
 		config: config,

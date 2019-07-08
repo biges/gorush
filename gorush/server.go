@@ -40,7 +40,7 @@ func heartbeatHandler(c *gin.Context) {
 
 func versionHandler(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{
-		"source":  "https://github.com/appleboy/gorush",
+		"source":  "https://github.com/biges/gorush",
 		"version": GetVersion(),
 	})
 }
